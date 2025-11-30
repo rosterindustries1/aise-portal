@@ -5,8 +5,8 @@ const axios = require('axios');
 // Discord OAuth2 Configuration
 const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID || '1412133846362755103';
 const DISCORD_CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET || 'QVEr_zt09aNVepT7H-64mMG1Ck7PbyEj';
-const REDIRECT_URI = 'http://localhost:3000/api/auth/discord/callback';
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
+const REDIRECT_URI = process.env.REDIRECT_URI || 'https://aise-bot.onrender.com/api/auth/discord/callback';
+const CLIENT_URL = process.env.CLIENT_URL || 'https://portfolio-auth-25d88.web.app';
 
 // 1. Redirect to Discord
 router.get('/discord/login', (req, res) => {
